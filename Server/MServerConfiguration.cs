@@ -1,10 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Runtime.Serialization;
+using OPCUAServer;
 
 namespace Server {
-    internal class MServerConfiguration {
+
+    [DataContract(Namespace = Namespaces.OPCUAServer)]
+    class MServerConfiguration {
+        public MServerConfiguration() {
+            Initialize();
+        }
+
+        [OnDeserializing()]
+        private void Initialize(StreamingContext context) {
+            Initialize();
+        }
+
+        /// <summary>
+        /// Sets private members to default values.
+        /// </summary>
+        private void Initialize() {
+        }
     }
 }

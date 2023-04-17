@@ -31,5 +31,15 @@ namespace Server {
                 m_configuration = new MServerConfiguration();
             }
         }
+
+        protected override NodeStateCollection LoadPredefinedNodes(ISystemContext context) {
+            NodeStateCollection predefinedNodes = new NodeStateCollection();
+            predefinedNodes.LoadFromBinaryResource(context,
+                "C:/Users/Kudzai/source/repos/BatchPlant/BatchPlant/BatchPlant.PredefinedNodes.uanodes",
+                typeof(ServerNodeManager).GetTypeInfo().Assembly,
+                true);
+
+            return predefinedNodes;
+        }
     }
 }

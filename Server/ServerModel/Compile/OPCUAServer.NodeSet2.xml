@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2023-04-17T15:28:56.977325Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+  <NamespaceUris>
+    <Uri>http://opcfoundation.org/OPCUAServer</Uri>
+  </NamespaceUris>
+  <Models>
+    <Model ModelUri="http://opcfoundation.org/OPCUAServer" Version="1.0.0" PublicationDate="2023-04-17T15:28:56.977325Z">
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" XmlSchemaUri="http://opcfoundation.org/UA/2008/02/Types.xsd" />
+    </Model>
+  </Models>
+  <Aliases>
+    <Alias Alias="Boolean">i=1</Alias>
+    <Alias Alias="SByte">i=2</Alias>
+    <Alias Alias="Byte">i=3</Alias>
+    <Alias Alias="Int16">i=4</Alias>
+    <Alias Alias="UInt16">i=5</Alias>
+    <Alias Alias="Int32">i=6</Alias>
+    <Alias Alias="UInt32">i=7</Alias>
+    <Alias Alias="Int64">i=8</Alias>
+    <Alias Alias="UInt64">i=9</Alias>
+    <Alias Alias="Float">i=10</Alias>
+    <Alias Alias="Double">i=11</Alias>
+    <Alias Alias="DateTime">i=13</Alias>
+    <Alias Alias="String">i=12</Alias>
+    <Alias Alias="ByteString">i=15</Alias>
+    <Alias Alias="Guid">i=14</Alias>
+    <Alias Alias="XmlElement">i=16</Alias>
+    <Alias Alias="NodeId">i=17</Alias>
+    <Alias Alias="ExpandedNodeId">i=18</Alias>
+    <Alias Alias="QualifiedName">i=20</Alias>
+    <Alias Alias="LocalizedText">i=21</Alias>
+    <Alias Alias="StatusCode">i=19</Alias>
+    <Alias Alias="Structure">i=22</Alias>
+    <Alias Alias="Number">i=26</Alias>
+    <Alias Alias="Integer">i=27</Alias>
+    <Alias Alias="UInteger">i=28</Alias>
+    <Alias Alias="HasComponent">i=47</Alias>
+    <Alias Alias="HasProperty">i=46</Alias>
+    <Alias Alias="Organizes">i=35</Alias>
+    <Alias Alias="HasEventSource">i=36</Alias>
+    <Alias Alias="HasNotifier">i=48</Alias>
+    <Alias Alias="HasSubtype">i=45</Alias>
+    <Alias Alias="HasTypeDefinition">i=40</Alias>
+    <Alias Alias="HasModellingRule">i=37</Alias>
+    <Alias Alias="HasEncoding">i=38</Alias>
+    <Alias Alias="HasDescription">i=39</Alias>
+    <Alias Alias="HasCause">i=53</Alias>
+    <Alias Alias="ToState">i=52</Alias>
+    <Alias Alias="FromState">i=51</Alias>
+    <Alias Alias="HasEffect">i=54</Alias>
+    <Alias Alias="HasTrueSubState">i=9004</Alias>
+    <Alias Alias="HasFalseSubState">i=9005</Alias>
+    <Alias Alias="HasDictionaryEntry">i=17597</Alias>
+    <Alias Alias="HasCondition">i=9006</Alias>
+    <Alias Alias="HasGuard">i=15112</Alias>
+    <Alias Alias="HasAddIn">i=17604</Alias>
+    <Alias Alias="HasInterface">i=17603</Alias>
+  </Aliases>
+  <UAObjectType NodeId="ns=1;i=1" BrowseName="1:GenericFirmwareType">
+    <DisplayName>GenericFirmwareType</DisplayName>
+    <Description>A generic firmware.</Description>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=2</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=8</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=14</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="ns=1;i=2" BrowseName="1:FirmwareName" ParentNodeId="ns=1;i=1" DataType="String">
+    <DisplayName>FirmwareName</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=6</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=6" BrowseName="EURange" ParentNodeId="ns=1;i=2" DataType="i=884">
+    <DisplayName>EURange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=2</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=8" BrowseName="1:FirmwareVersion" ParentNodeId="ns=1;i=1" DataType="String">
+    <DisplayName>FirmwareVersion</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=12</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=12" BrowseName="EURange" ParentNodeId="ns=1;i=8" DataType="i=884">
+    <DisplayName>EURange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=8</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=14" BrowseName="1:FirmwareBuildTime" ParentNodeId="ns=1;i=1" DataType="DateTime">
+    <DisplayName>FirmwareBuildTime</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=18</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=18" BrowseName="EURange" ParentNodeId="ns=1;i=14" DataType="i=884">
+    <DisplayName>EURange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=14</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType NodeId="ns=1;i=20" BrowseName="1:Firmware1">
+    <DisplayName>Firmware1</DisplayName>
+    <Description>Firmware1</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=39" BrowseName="1:FirmwareTransferRequest">
+    <DisplayName>FirmwareTransferRequest</DisplayName>
+    <Description>FirmwareTransferRequest</Description>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=1;i=40" BrowseName="1:MachineType">
+    <DisplayName>MachineType</DisplayName>
+    <Description>A folder dei nostri firmware</Description>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=41</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=61</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="ns=1;i=41" BrowseName="1:Firmware1" ParentNodeId="ns=1;i=40">
+    <DisplayName>Firmware1</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=42</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=48</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=54</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=20</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=40</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=42" BrowseName="1:FirmwareName" ParentNodeId="ns=1;i=41" DataType="String">
+    <DisplayName>FirmwareName</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=46</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=41</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=46" BrowseName="EURange" ParentNodeId="ns=1;i=42" DataType="i=884">
+    <DisplayName>EURange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=42</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=48" BrowseName="1:FirmwareVersion" ParentNodeId="ns=1;i=41" DataType="String">
+    <DisplayName>FirmwareVersion</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=52</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=41</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=52" BrowseName="EURange" ParentNodeId="ns=1;i=48" DataType="i=884">
+    <DisplayName>EURange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=48</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=54" BrowseName="1:FirmwareBuildTime" ParentNodeId="ns=1;i=41" DataType="DateTime">
+    <DisplayName>FirmwareBuildTime</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=58</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=41</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=58" BrowseName="EURange" ParentNodeId="ns=1;i=54" DataType="i=884">
+    <DisplayName>EURange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=54</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType NodeId="ns=1;i=60" BrowseName="1:OPCUAServerType">
+    <DisplayName>OPCUAServerType</DisplayName>
+    <Description>Machine</Description>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=61</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="ns=1;i=61" BrowseName="1: Machine" SymbolicName="Machine" ParentNodeId="ns=1;i=60" EventNotifier="1">
+    <DisplayName> Machine</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=62</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=40</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=60</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=62" BrowseName="1:Firmware1" ParentNodeId="ns=1;i=61">
+    <DisplayName>Firmware1</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=63</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=69</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=75</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=20</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=61</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=63" BrowseName="1:FirmwareName" ParentNodeId="ns=1;i=62" DataType="String">
+    <DisplayName>FirmwareName</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=67</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=62</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=67" BrowseName="EURange" ParentNodeId="ns=1;i=63" DataType="i=884">
+    <DisplayName>EURange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=63</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=69" BrowseName="1:FirmwareVersion" ParentNodeId="ns=1;i=62" DataType="String">
+    <DisplayName>FirmwareVersion</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=73</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=62</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=73" BrowseName="EURange" ParentNodeId="ns=1;i=69" DataType="i=884">
+    <DisplayName>EURange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=69</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=75" BrowseName="1:FirmwareBuildTime" ParentNodeId="ns=1;i=62" DataType="DateTime">
+    <DisplayName>FirmwareBuildTime</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=79</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=62</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=79" BrowseName="EURange" ParentNodeId="ns=1;i=75" DataType="i=884">
+    <DisplayName>EURange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=75</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=1;i=81" BrowseName="1:Line" SymbolicName="OPCUAServer1" EventNotifier="1">
+    <DisplayName>Line</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=82</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=60</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=82" BrowseName="1: Machine" SymbolicName="Machine" ParentNodeId="ns=1;i=81" EventNotifier="1">
+    <DisplayName> Machine</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=83</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=40</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=81</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=83" BrowseName="1:Firmware1" ParentNodeId="ns=1;i=82">
+    <DisplayName>Firmware1</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent">ns=1;i=84</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=90</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=96</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=20</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=82</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=1;i=84" BrowseName="1:FirmwareName" ParentNodeId="ns=1;i=83" DataType="String">
+    <DisplayName>FirmwareName</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=88</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=83</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=88" BrowseName="EURange" ParentNodeId="ns=1;i=84" DataType="i=884">
+    <DisplayName>EURange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=84</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=90" BrowseName="1:FirmwareVersion" ParentNodeId="ns=1;i=83" DataType="String">
+    <DisplayName>FirmwareVersion</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=94</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=83</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=94" BrowseName="EURange" ParentNodeId="ns=1;i=90" DataType="i=884">
+    <DisplayName>EURange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=90</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=96" BrowseName="1:FirmwareBuildTime" ParentNodeId="ns=1;i=83" DataType="DateTime">
+    <DisplayName>FirmwareBuildTime</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=1;i=100</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=83</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;i=100" BrowseName="EURange" ParentNodeId="ns=1;i=96" DataType="i=884">
+    <DisplayName>EURange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=96</Reference>
+    </References>
+  </UAVariable>
+</UANodeSet>

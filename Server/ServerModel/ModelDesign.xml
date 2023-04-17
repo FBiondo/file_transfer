@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<opc:ModelDesign
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:opc="http://opcfoundation.org/UA/ModelDesign.xsd"
+	xmlns:ua="http://opcfoundation.org/UA/"
+	xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"
+	xmlns="http://opcfoundation.org/OPCUAServer"
+	TargetNamespace="http://opcfoundation.org/OPCUAServer">
+	<opc:Namespaces>
+		<opc:Namespace Name="OpcUa" Prefix="Opc.Ua" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/</opc:Namespace>
+		<opc:Namespace Name="OPCUAServer" Prefix="OPCUAServer">http://opcfoundation.org/OPCUAServer</opc:Namespace>
+	</opc:Namespaces>
+	<!-- Design an Information Model for an OPC-UA server.-->
+
+	<!--Create a generic Firmware type can act as a base class for all the possible firmware.-->
+	<opc:ObjectType SymbolicName="GenericFirmwareType" BaseType="ua:BaseObjectType">
+		<opc:Description>A generic firmware.</opc:Description>
+		<opc:Children>
+			<opc:Variable SymbolicName="FirmwareName" DataType="ua:String" ValueRank="Scalar" TypeDefinition="ua:AnalogItemType" AccessLevel="Read"  />
+			<opc:Variable SymbolicName="FirmwareVersion" DataType="ua:String" ValueRank="Scalar" TypeDefinition="ua:AnalogItemType" AccessLevel="Read" />
+			<opc:Variable SymbolicName="FirmwareBuildTime" DataType="ua:DateTime" ValueRank="Scalar" TypeDefinition="ua:AnalogItemType" AccessLevel="Read" />
+		</opc:Children>
+	</opc:ObjectType>
+
+	<!--!create two firmware-->
+	<opc:ObjectType SymbolicName="Firmware1" BaseType="GenericFirmwareType">
+		<opc:Description>Firmware1</opc:Description>
+	</opc:ObjectType>
+	
+
+	<!--Create a method for the firmware request-->
+	<opc:ObjectType SymbolicName="FirmwareTransferRequest" BaseType="ua:BaseObjectType">
+		<opc:Description>FirmwareTransferRequest</opc:Description>
+		<InputArguments>
+			<Arguments Name="GenericFirmwareType" BaseType="ua:GenericFirmwareType" ValueRank="Scalar" />
+		</InputArguments>
+		<OutputArguments>
+			<Argument Name="Result" DataType="ua:TemporaryFileTransferType" ValueRank="Scalar"></Argument>
+		</OutputArguments>
+
+	</opc:ObjectType>
+
+	<!--container that will represent our machine.-->
+	<opc:ObjectType SymbolicName="MachineType" BaseType="ua:FolderType">
+		<opc:Description>A folder dei nostri firmware</opc:Description>
+		<opc:Children>
+		<opc:Object SymbolicName="Firmware1" TypeDefinition="Firmware1" SupportsEvent="true">
+			<opc:BrowseName>Firmware1</opc:BrowseName>
+		</opc:Object>	
+		</opc:Children>
+	</opc:ObjectType>
+
+	<!--Create a generic node for rappresenting our machine-->
+
+	<!--server-->
+	<opc:ObjectType SymbolicName="OPCUAServerType" BaseType="ua:BaseObjectType" SupportsEvents="true">
+		<opc:Description>Machine</opc:Description>
+		<opc:Children>
+			<opc:Object SymbolicName="Machine" TypeDefinition="MachineType" SupportsEvents="true">
+				<opc:BrowseName> Machine</opc:BrowseName>
+			</opc:Object>
+		</opc:Children>
+	</opc:ObjectType>
+
+	<!--instance of OPCUAServerType-->
+	<opc:Object SymbolicName="OPCUAServer1" TypeDefinition="OPCUAServerType" SupportsEvents="true">
+		<opc:BrowseName>Line</opc:BrowseName>
+		<opc:References>
+			<opc:Reference IsInverse="true">
+				<opc:ReferenceType>ua:Organizes</opc:ReferenceType>
+				<opc:TargetId>ua:ObjectsFolder</opc:TargetId>
+			</opc:Reference>
+		</opc:References>
+	</opc:Object>
+	
+</opc:ModelDesign>

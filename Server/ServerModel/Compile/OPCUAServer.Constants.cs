@@ -37,6 +37,35 @@ using Opc.Ua;
 
 namespace OPCUAServer
 {
+    #region Method Identifiers
+    /// <remarks />
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public static partial class Methods
+    {
+        /// <remarks />
+        public const uint FirmwareTransferRequest = 39;
+
+        /// <remarks />
+        public const uint OPCUAServerType_StartProcess = 83;
+
+        /// <remarks />
+        public const uint OPCUAServerType_StopProcess = 84;
+
+        /// <remarks />
+        public const uint OPCUAServerType_request = 109;
+
+        /// <remarks />
+        public const uint OPCUAServer1_StartProcess = 107;
+
+        /// <remarks />
+        public const uint OPCUAServer1_StopProcess = 108;
+
+        /// <remarks />
+        public const uint OPCUAServer1_request = 110;
+    }
+    #endregion
+
     #region Object Identifiers
     /// <remarks />
     /// <exclude />
@@ -47,19 +76,19 @@ namespace OPCUAServer
         public const uint MachineType_Firmware1 = 41;
 
         /// <remarks />
-        public const uint OPCUAServerType_Machine = 61;
+        public const uint OPCUAServerType_Machine = 62;
 
         /// <remarks />
-        public const uint OPCUAServerType_Machine_Firmware1 = 62;
+        public const uint OPCUAServerType_Machine_Firmware1 = 63;
 
         /// <remarks />
-        public const uint OPCUAServer1 = 81;
+        public const uint OPCUAServer1 = 85;
 
         /// <remarks />
-        public const uint OPCUAServer1_Machine = 82;
+        public const uint OPCUAServer1_Machine = 86;
 
         /// <remarks />
-        public const uint OPCUAServer1_Machine_Firmware1 = 83;
+        public const uint OPCUAServer1_Machine_Firmware1 = 87;
     }
     #endregion
 
@@ -76,13 +105,10 @@ namespace OPCUAServer
         public const uint Firmware1 = 20;
 
         /// <remarks />
-        public const uint FirmwareTransferRequest = 39;
-
-        /// <remarks />
         public const uint MachineType = 40;
 
         /// <remarks />
-        public const uint OPCUAServerType = 60;
+        public const uint OPCUAServerType = 61;
     }
     #endregion
 
@@ -138,40 +164,69 @@ namespace OPCUAServer
         public const uint MachineType_Firmware1_FirmwareBuildTime_EURange = 58;
 
         /// <remarks />
-        public const uint OPCUAServerType_Machine_Firmware1_FirmwareName = 63;
+        public const uint OPCUAServerType_Machine_Firmware1_FirmwareName = 64;
 
         /// <remarks />
-        public const uint OPCUAServerType_Machine_Firmware1_FirmwareName_EURange = 67;
+        public const uint OPCUAServerType_Machine_Firmware1_FirmwareName_EURange = 68;
 
         /// <remarks />
-        public const uint OPCUAServerType_Machine_Firmware1_FirmwareVersion = 69;
+        public const uint OPCUAServerType_Machine_Firmware1_FirmwareVersion = 70;
 
         /// <remarks />
-        public const uint OPCUAServerType_Machine_Firmware1_FirmwareVersion_EURange = 73;
+        public const uint OPCUAServerType_Machine_Firmware1_FirmwareVersion_EURange = 74;
 
         /// <remarks />
-        public const uint OPCUAServerType_Machine_Firmware1_FirmwareBuildTime = 75;
+        public const uint OPCUAServerType_Machine_Firmware1_FirmwareBuildTime = 76;
 
         /// <remarks />
-        public const uint OPCUAServerType_Machine_Firmware1_FirmwareBuildTime_EURange = 79;
+        public const uint OPCUAServerType_Machine_Firmware1_FirmwareBuildTime_EURange = 80;
 
         /// <remarks />
-        public const uint OPCUAServer1_Machine_Firmware1_FirmwareName = 84;
+        public const uint OPCUAServer1_Machine_Firmware1_FirmwareName = 88;
 
         /// <remarks />
-        public const uint OPCUAServer1_Machine_Firmware1_FirmwareName_EURange = 88;
+        public const uint OPCUAServer1_Machine_Firmware1_FirmwareName_EURange = 92;
 
         /// <remarks />
-        public const uint OPCUAServer1_Machine_Firmware1_FirmwareVersion = 90;
+        public const uint OPCUAServer1_Machine_Firmware1_FirmwareVersion = 94;
 
         /// <remarks />
-        public const uint OPCUAServer1_Machine_Firmware1_FirmwareVersion_EURange = 94;
+        public const uint OPCUAServer1_Machine_Firmware1_FirmwareVersion_EURange = 98;
 
         /// <remarks />
-        public const uint OPCUAServer1_Machine_Firmware1_FirmwareBuildTime = 96;
+        public const uint OPCUAServer1_Machine_Firmware1_FirmwareBuildTime = 100;
 
         /// <remarks />
-        public const uint OPCUAServer1_Machine_Firmware1_FirmwareBuildTime_EURange = 100;
+        public const uint OPCUAServer1_Machine_Firmware1_FirmwareBuildTime_EURange = 104;
+    }
+    #endregion
+
+    #region Method Node Identifiers
+    /// <remarks />
+    /// <exclude />
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
+    public static partial class MethodIds
+    {
+        /// <remarks />
+        public static readonly ExpandedNodeId FirmwareTransferRequest = new ExpandedNodeId(OPCUAServer.Methods.FirmwareTransferRequest, OPCUAServer.Namespaces.OPCUAServer);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId OPCUAServerType_StartProcess = new ExpandedNodeId(OPCUAServer.Methods.OPCUAServerType_StartProcess, OPCUAServer.Namespaces.OPCUAServer);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId OPCUAServerType_StopProcess = new ExpandedNodeId(OPCUAServer.Methods.OPCUAServerType_StopProcess, OPCUAServer.Namespaces.OPCUAServer);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId OPCUAServerType_request = new ExpandedNodeId(OPCUAServer.Methods.OPCUAServerType_request, OPCUAServer.Namespaces.OPCUAServer);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId OPCUAServer1_StartProcess = new ExpandedNodeId(OPCUAServer.Methods.OPCUAServer1_StartProcess, OPCUAServer.Namespaces.OPCUAServer);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId OPCUAServer1_StopProcess = new ExpandedNodeId(OPCUAServer.Methods.OPCUAServer1_StopProcess, OPCUAServer.Namespaces.OPCUAServer);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId OPCUAServer1_request = new ExpandedNodeId(OPCUAServer.Methods.OPCUAServer1_request, OPCUAServer.Namespaces.OPCUAServer);
     }
     #endregion
 
@@ -212,9 +267,6 @@ namespace OPCUAServer
 
         /// <remarks />
         public static readonly ExpandedNodeId Firmware1 = new ExpandedNodeId(OPCUAServer.ObjectTypes.Firmware1, OPCUAServer.Namespaces.OPCUAServer);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId FirmwareTransferRequest = new ExpandedNodeId(OPCUAServer.ObjectTypes.FirmwareTransferRequest, OPCUAServer.Namespaces.OPCUAServer);
 
         /// <remarks />
         public static readonly ExpandedNodeId MachineType = new ExpandedNodeId(OPCUAServer.ObjectTypes.MachineType, OPCUAServer.Namespaces.OPCUAServer);
@@ -347,6 +399,15 @@ namespace OPCUAServer
 
         /// <remarks />
         public const string OPCUAServerType = "OPCUAServerType";
+
+        /// <remarks />
+        public const string request = "request";
+
+        /// <remarks />
+        public const string StartProcess = "StartProcess";
+
+        /// <remarks />
+        public const string StopProcess = "StopProcess";
     }
     #endregion
 

@@ -339,67 +339,6 @@ namespace OPCUAServer
     #endif
     #endregion
 
-    #region FirmwareTransferRequestState Class
-    #if (!OPCUA_EXCLUDE_FirmwareTransferRequestState)
-    /// <remarks />
-    /// <exclude />
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Opc.Ua.ModelCompiler", "1.0.0.0")]
-    public partial class FirmwareTransferRequestState : BaseObjectState
-    {
-        #region Constructors
-        /// <remarks />
-        public FirmwareTransferRequestState(NodeState parent) : base(parent)
-        {
-        }
-
-        /// <remarks />
-        protected override NodeId GetDefaultTypeDefinitionId(NamespaceTable namespaceUris)
-        {
-            return Opc.Ua.NodeId.Create(OPCUAServer.ObjectTypes.FirmwareTransferRequest, OPCUAServer.Namespaces.OPCUAServer, namespaceUris);
-        }
-
-        #if (!OPCUA_EXCLUDE_InitializationStrings)
-        /// <remarks />
-        protected override void Initialize(ISystemContext context)
-        {
-            base.Initialize(context);
-            Initialize(context, InitializationString);
-            InitializeOptionalChildren(context);
-        }
-
-        /// <remarks />
-        protected override void Initialize(ISystemContext context, NodeState source)
-        {
-            InitializeOptionalChildren(context);
-            base.Initialize(context, source);
-        }
-
-        /// <remarks />
-        protected override void InitializeOptionalChildren(ISystemContext context)
-        {
-            base.InitializeOptionalChildren(context);
-        }
-
-        #region Initialization String
-        private const string InitializationString =
-           "AQAAACQAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvT1BDVUFTZXJ2ZXL/////BGCAAgEAAAABAB8A" +
-           "AABGaXJtd2FyZVRyYW5zZmVyUmVxdWVzdEluc3RhbmNlAQEnAAEBJwAnAAAA/////wAAAAA=";
-        #endregion
-        #endif
-        #endregion
-
-        #region Public Properties
-        #endregion
-
-        #region Overridden Methods
-        #endregion
-
-        #region Private Fields
-        #endregion
-    }
-    #endif
-    #endregion
-
     #region MachineState Class
     #if (!OPCUA_EXCLUDE_MachineState)
     /// <remarks />
@@ -588,14 +527,17 @@ namespace OPCUAServer
         #region Initialization String
         private const string InitializationString =
            "AQAAACQAAABodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvT1BDVUFTZXJ2ZXL/////hGCAAgEAAAABABcA" +
-           "AABPUENVQVNlcnZlclR5cGVJbnN0YW5jZQEBPAABATwAPAAAAAH/////AQAAAIRgwAoBAAAABwAAAE1h" +
-           "Y2hpbmUBAAgAAAAgTWFjaGluZQEBPQAALwEBKAA9AAAAAf////8BAAAABGCACgEAAAABAAkAAABGaXJt" +
-           "d2FyZTEBAT4AAC8BARQAPgAAAP////8DAAAAFWCJCgIAAAABAAwAAABGaXJtd2FyZU5hbWUBAT8AAC8B" +
-           "AEAJPwAAAAAM/////wEB/////wEAAAAVYIkKAgAAAAAABwAAAEVVUmFuZ2UBAUMAAC4AREMAAAABAHQD" +
-           "/////wEB/////wAAAAAVYIkKAgAAAAEADwAAAEZpcm13YXJlVmVyc2lvbgEBRQAALwEAQAlFAAAAAAz/" +
-           "////AQH/////AQAAABVgiQoCAAAAAAAHAAAARVVSYW5nZQEBSQAALgBESQAAAAEAdAP/////AQH/////" +
-           "AAAAABVgiQoCAAAAAQARAAAARmlybXdhcmVCdWlsZFRpbWUBAUsAAC8BAEAJSwAAAAAN/////wEB////" +
-           "/wEAAAAVYIkKAgAAAAAABwAAAEVVUmFuZ2UBAU8AAC4ARE8AAAABAHQD/////wEB/////wAAAAA=";
+           "AABPUENVQVNlcnZlclR5cGVJbnN0YW5jZQEBPQABAT0APQAAAAH/////BAAAAIRgwAoBAAAABwAAAE1h" +
+           "Y2hpbmUBAAgAAAAgTWFjaGluZQEBPgAALwEBKAA+AAAAAf////8BAAAABGCACgEAAAABAAkAAABGaXJt" +
+           "d2FyZTEBAT8AAC8BARQAPwAAAP////8DAAAAFWCJCgIAAAABAAwAAABGaXJtd2FyZU5hbWUBAUAAAC8B" +
+           "AEAJQAAAAAAM/////wEB/////wEAAAAVYIkKAgAAAAAABwAAAEVVUmFuZ2UBAUQAAC4AREQAAAABAHQD" +
+           "/////wEB/////wAAAAAVYIkKAgAAAAEADwAAAEZpcm13YXJlVmVyc2lvbgEBRgAALwEAQAlGAAAAAAz/" +
+           "////AQH/////AQAAABVgiQoCAAAAAAAHAAAARVVSYW5nZQEBSgAALgBESgAAAAEAdAP/////AQH/////" +
+           "AAAAABVgiQoCAAAAAQARAAAARmlybXdhcmVCdWlsZFRpbWUBAUwAAC8BAEAJTAAAAAAN/////wEB////" +
+           "/wEAAAAVYIkKAgAAAAAABwAAAEVVUmFuZ2UBAVAAAC4ARFAAAAABAHQD/////wEB/////wAAAAAEYYIK" +
+           "BAAAAAEADAAAAFN0YXJ0UHJvY2VzcwEBUwAALwEBUwBTAAAAAQH/////AAAAAARhggoEAAAAAQALAAAA" +
+           "U3RvcFByb2Nlc3MBAVQAAC8BAVQAVAAAAAEB/////wAAAAAkYYIKBAAAAAEABwAAAHJlcXVlc3QBAW0A" +
+           "AwAAAAAXAAAARmlybXdhcmVUcmFuc2ZlclJlcXVlc3QALwEBbQBtAAAAAQH/////AAAAAA==";
         #endregion
         #endif
         #endregion
@@ -619,6 +561,63 @@ namespace OPCUAServer
                 m_machine = value;
             }
         }
+
+        /// <remarks />
+        public MethodState StartProcess
+        {
+            get
+            {
+                return m_startProcessMethod;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_startProcessMethod, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_startProcessMethod = value;
+            }
+        }
+
+        /// <remarks />
+        public MethodState StopProcess
+        {
+            get
+            {
+                return m_stopProcessMethod;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_stopProcessMethod, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_stopProcessMethod = value;
+            }
+        }
+
+        /// <remarks />
+        public MethodState request
+        {
+            get
+            {
+                return m_requestMethod;
+            }
+
+            set
+            {
+                if (!Object.ReferenceEquals(m_requestMethod, value))
+                {
+                    ChangeMasks |= NodeStateChangeMasks.Children;
+                }
+
+                m_requestMethod = value;
+            }
+        }
         #endregion
 
         #region Overridden Methods
@@ -630,6 +629,21 @@ namespace OPCUAServer
             if (m_machine != null)
             {
                 children.Add(m_machine);
+            }
+
+            if (m_startProcessMethod != null)
+            {
+                children.Add(m_startProcessMethod);
+            }
+
+            if (m_stopProcessMethod != null)
+            {
+                children.Add(m_stopProcessMethod);
+            }
+
+            if (m_requestMethod != null)
+            {
+                children.Add(m_requestMethod);
             }
 
             base.GetChildren(context, children);
@@ -671,6 +685,69 @@ namespace OPCUAServer
                     instance = Machine;
                     break;
                 }
+
+                case OPCUAServer.BrowseNames.StartProcess:
+                {
+                    if (createOrReplace)
+                    {
+                        if (StartProcess == null)
+                        {
+                            if (replacement == null)
+                            {
+                                StartProcess = new MethodState(this);
+                            }
+                            else
+                            {
+                                StartProcess = (MethodState)replacement;
+                            }
+                        }
+                    }
+
+                    instance = StartProcess;
+                    break;
+                }
+
+                case OPCUAServer.BrowseNames.StopProcess:
+                {
+                    if (createOrReplace)
+                    {
+                        if (StopProcess == null)
+                        {
+                            if (replacement == null)
+                            {
+                                StopProcess = new MethodState(this);
+                            }
+                            else
+                            {
+                                StopProcess = (MethodState)replacement;
+                            }
+                        }
+                    }
+
+                    instance = StopProcess;
+                    break;
+                }
+
+                case OPCUAServer.BrowseNames.request:
+                {
+                    if (createOrReplace)
+                    {
+                        if (request == null)
+                        {
+                            if (replacement == null)
+                            {
+                                request = new MethodState(this);
+                            }
+                            else
+                            {
+                                request = (MethodState)replacement;
+                            }
+                        }
+                    }
+
+                    instance = request;
+                    break;
+                }
             }
 
             if (instance != null)
@@ -684,6 +761,9 @@ namespace OPCUAServer
 
         #region Private Fields
         private MachineState m_machine;
+        private MethodState m_startProcessMethod;
+        private MethodState m_stopProcessMethod;
+        private MethodState m_requestMethod;
         #endregion
     }
     #endif

@@ -24,7 +24,7 @@ namespace Server {
         protected override ServerProperties LoadServerProperties() {
             ServerProperties properties = new ServerProperties();
 
-            properties.ManufacturerName = "Industry40tv";
+            properties.ManufacturerName = "BiondoIndustrie";
             properties.ProductName = "BatchPlant InformationModel Server";
             properties.ProductUri = "http://opcfoundation.org/BatchPlant/InformationModelServer/v1.0";
             properties.SoftwareVersion = Utils.GetAssemblySoftwareVersion();

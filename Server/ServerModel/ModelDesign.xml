@@ -30,16 +30,16 @@
 	
 
 	<!--Create a method for the firmware request-->
-	<opc:ObjectType SymbolicName="FirmwareTransferRequest" BaseType="ua:BaseObjectType">
+	<opc:Method SymbolicName="FirmwareTransferRequest" BaseType="ua:BaseObjectType">
 		<opc:Description>FirmwareTransferRequest</opc:Description>
 		<InputArguments>
-			<Arguments Name="GenericFirmwareType" BaseType="ua:GenericFirmwareType" ValueRank="Scalar" />
+			<Arguments Name="GenericFirmwareType" BaseType="GenericFirmwareType" ValueRank="Scalar" />
 		</InputArguments>
 		<OutputArguments>
 			<Argument Name="Result" DataType="ua:TemporaryFileTransferType" ValueRank="Scalar"></Argument>
 		</OutputArguments>
 
-	</opc:ObjectType>
+	</opc:Method>
 
 	<!--container that will represent our machine.-->
 	<opc:ObjectType SymbolicName="MachineType" BaseType="ua:FolderType">
@@ -60,6 +60,9 @@
 			<opc:Object SymbolicName="Machine" TypeDefinition="MachineType" SupportsEvents="true">
 				<opc:BrowseName> Machine</opc:BrowseName>
 			</opc:Object>
+			<opc:Method SymbolicName="StartProcess" ModellingRule="Mandatory"></opc:Method>
+			<opc:Method SymbolicName="StopProcess" ModellingRule="Mandatory"></opc:Method>
+			<opc:Method SymbolicName="request" TypeDefinition="FirmwareTransferRequest" ModellingRule="Mandatory"></opc:Method>
 		</opc:Children>
 	</opc:ObjectType>
 

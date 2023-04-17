@@ -192,7 +192,7 @@
     </uax:SuperTypeId>
   </Firmware1>
   <FirmwareTransferRequest xmlns="http://opcfoundation.org/OPCUAServer">
-    <uax:NodeClass>ObjectType_8</uax:NodeClass>
+    <uax:NodeClass>Method_4</uax:NodeClass>
     <uax:NodeId>
       <uax:Identifier>ns=1;i=39</uax:Identifier>
     </uax:NodeId>
@@ -203,9 +203,15 @@
     <uax:Description>
       <uax:Text>FirmwareTransferRequest</uax:Text>
     </uax:Description>
-    <uax:SuperTypeId>
-      <uax:Identifier>i=58</uax:Identifier>
-    </uax:SuperTypeId>
+    <uax:ReferenceTypeId>
+      <uax:Identifier>i=47</uax:Identifier>
+    </uax:ReferenceTypeId>
+    <uax:TypeDefinitionId>
+      <uax:Identifier>ns=1;i=39</uax:Identifier>
+    </uax:TypeDefinitionId>
+    <uax:NumericId>39</uax:NumericId>
+    <uax:Executable>true</uax:Executable>
+    <uax:UserExecutable>true</uax:UserExecutable>
   </FirmwareTransferRequest>
   <MachineType xmlns="http://opcfoundation.org/OPCUAServer">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
@@ -402,7 +408,7 @@
   <OPCUAServerType xmlns="http://opcfoundation.org/OPCUAServer">
     <uax:NodeClass>ObjectType_8</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=60</uax:Identifier>
+      <uax:Identifier>ns=1;i=61</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -417,7 +423,7 @@
     <Machine>
       <uax:NodeClass>Object_1</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=61</uax:Identifier>
+        <uax:Identifier>ns=1;i=62</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -432,12 +438,12 @@
       <uax:ModellingRuleId>
         <uax:Identifier>i=78</uax:Identifier>
       </uax:ModellingRuleId>
-      <uax:NumericId>61</uax:NumericId>
+      <uax:NumericId>62</uax:NumericId>
       <uax:EventNotifier>1</uax:EventNotifier>
       <Firmware1>
         <uax:NodeClass>Object_1</uax:NodeClass>
         <uax:NodeId>
-          <uax:Identifier>ns=1;i=62</uax:Identifier>
+          <uax:Identifier>ns=1;i=63</uax:Identifier>
         </uax:NodeId>
         <uax:BrowseName>
           <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -452,11 +458,11 @@
         <uax:ModellingRuleId>
           <uax:Identifier>i=78</uax:Identifier>
         </uax:ModellingRuleId>
-        <uax:NumericId>62</uax:NumericId>
+        <uax:NumericId>63</uax:NumericId>
         <FirmwareName>
           <uax:NodeClass>Variable_2</uax:NodeClass>
           <uax:NodeId>
-            <uax:Identifier>ns=1;i=63</uax:Identifier>
+            <uax:Identifier>ns=1;i=64</uax:Identifier>
           </uax:NodeId>
           <uax:BrowseName>
             <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -471,7 +477,7 @@
           <uax:ModellingRuleId>
             <uax:Identifier>i=78</uax:Identifier>
           </uax:ModellingRuleId>
-          <uax:NumericId>63</uax:NumericId>
+          <uax:NumericId>64</uax:NumericId>
           <uax:DataType>
             <uax:Identifier>i=12</uax:Identifier>
           </uax:DataType>
@@ -481,7 +487,7 @@
           <EURange xmlns="http://opcfoundation.org/UA/">
             <uax:NodeClass>Variable_2</uax:NodeClass>
             <uax:NodeId>
-              <uax:Identifier>ns=1;i=67</uax:Identifier>
+              <uax:Identifier>ns=1;i=68</uax:Identifier>
             </uax:NodeId>
             <uax:BrowseName>
               <uax:NamespaceIndex>0</uax:NamespaceIndex>
@@ -496,7 +502,7 @@
             <uax:ModellingRuleId>
               <uax:Identifier>i=78</uax:Identifier>
             </uax:ModellingRuleId>
-            <uax:NumericId>67</uax:NumericId>
+            <uax:NumericId>68</uax:NumericId>
             <uax:DataType>
               <uax:Identifier>i=884</uax:Identifier>
             </uax:DataType>
@@ -508,7 +514,7 @@
         <FirmwareVersion>
           <uax:NodeClass>Variable_2</uax:NodeClass>
           <uax:NodeId>
-            <uax:Identifier>ns=1;i=69</uax:Identifier>
+            <uax:Identifier>ns=1;i=70</uax:Identifier>
           </uax:NodeId>
           <uax:BrowseName>
             <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -523,7 +529,7 @@
           <uax:ModellingRuleId>
             <uax:Identifier>i=78</uax:Identifier>
           </uax:ModellingRuleId>
-          <uax:NumericId>69</uax:NumericId>
+          <uax:NumericId>70</uax:NumericId>
           <uax:DataType>
             <uax:Identifier>i=12</uax:Identifier>
           </uax:DataType>
@@ -533,7 +539,7 @@
           <EURange xmlns="http://opcfoundation.org/UA/">
             <uax:NodeClass>Variable_2</uax:NodeClass>
             <uax:NodeId>
-              <uax:Identifier>ns=1;i=73</uax:Identifier>
+              <uax:Identifier>ns=1;i=74</uax:Identifier>
             </uax:NodeId>
             <uax:BrowseName>
               <uax:NamespaceIndex>0</uax:NamespaceIndex>
@@ -548,7 +554,7 @@
             <uax:ModellingRuleId>
               <uax:Identifier>i=78</uax:Identifier>
             </uax:ModellingRuleId>
-            <uax:NumericId>73</uax:NumericId>
+            <uax:NumericId>74</uax:NumericId>
             <uax:DataType>
               <uax:Identifier>i=884</uax:Identifier>
             </uax:DataType>
@@ -560,7 +566,7 @@
         <FirmwareBuildTime>
           <uax:NodeClass>Variable_2</uax:NodeClass>
           <uax:NodeId>
-            <uax:Identifier>ns=1;i=75</uax:Identifier>
+            <uax:Identifier>ns=1;i=76</uax:Identifier>
           </uax:NodeId>
           <uax:BrowseName>
             <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -575,7 +581,7 @@
           <uax:ModellingRuleId>
             <uax:Identifier>i=78</uax:Identifier>
           </uax:ModellingRuleId>
-          <uax:NumericId>75</uax:NumericId>
+          <uax:NumericId>76</uax:NumericId>
           <uax:DataType>
             <uax:Identifier>i=13</uax:Identifier>
           </uax:DataType>
@@ -585,7 +591,7 @@
           <EURange xmlns="http://opcfoundation.org/UA/">
             <uax:NodeClass>Variable_2</uax:NodeClass>
             <uax:NodeId>
-              <uax:Identifier>ns=1;i=79</uax:Identifier>
+              <uax:Identifier>ns=1;i=80</uax:Identifier>
             </uax:NodeId>
             <uax:BrowseName>
               <uax:NamespaceIndex>0</uax:NamespaceIndex>
@@ -600,7 +606,7 @@
             <uax:ModellingRuleId>
               <uax:Identifier>i=78</uax:Identifier>
             </uax:ModellingRuleId>
-            <uax:NumericId>79</uax:NumericId>
+            <uax:NumericId>80</uax:NumericId>
             <uax:DataType>
               <uax:Identifier>i=884</uax:Identifier>
             </uax:DataType>
@@ -611,11 +617,80 @@
         </FirmwareBuildTime>
       </Firmware1>
     </Machine>
+    <StartProcess>
+      <uax:NodeClass>Method_4</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=83</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>StartProcess</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=47</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>ns=1;i=83</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=78</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>83</uax:NumericId>
+      <uax:Executable>true</uax:Executable>
+      <uax:UserExecutable>true</uax:UserExecutable>
+    </StartProcess>
+    <StopProcess>
+      <uax:NodeClass>Method_4</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=84</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>StopProcess</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=47</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>ns=1;i=84</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=78</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>84</uax:NumericId>
+      <uax:Executable>true</uax:Executable>
+      <uax:UserExecutable>true</uax:UserExecutable>
+    </StopProcess>
+    <request>
+      <uax:NodeClass>Method_4</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=109</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>request</uax:Name>
+      </uax:BrowseName>
+      <uax:Description>
+        <uax:Text>FirmwareTransferRequest</uax:Text>
+      </uax:Description>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=47</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>ns=1;i=109</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:ModellingRuleId>
+        <uax:Identifier>i=78</uax:Identifier>
+      </uax:ModellingRuleId>
+      <uax:NumericId>109</uax:NumericId>
+      <uax:Executable>true</uax:Executable>
+      <uax:UserExecutable>true</uax:UserExecutable>
+    </request>
   </OPCUAServerType>
   <OPCUAServer1 xmlns="http://opcfoundation.org/OPCUAServer">
     <uax:NodeClass>Object_1</uax:NodeClass>
     <uax:NodeId>
-      <uax:Identifier>ns=1;i=81</uax:Identifier>
+      <uax:Identifier>ns=1;i=85</uax:Identifier>
     </uax:NodeId>
     <uax:BrowseName>
       <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -625,9 +700,9 @@
       <uax:Identifier>i=47</uax:Identifier>
     </uax:ReferenceTypeId>
     <uax:TypeDefinitionId>
-      <uax:Identifier>ns=1;i=60</uax:Identifier>
+      <uax:Identifier>ns=1;i=61</uax:Identifier>
     </uax:TypeDefinitionId>
-    <uax:NumericId>81</uax:NumericId>
+    <uax:NumericId>85</uax:NumericId>
     <uax:EventNotifier>1</uax:EventNotifier>
     <uax:References>
       <uax:Reference>
@@ -643,7 +718,7 @@
     <Machine>
       <uax:NodeClass>Object_1</uax:NodeClass>
       <uax:NodeId>
-        <uax:Identifier>ns=1;i=82</uax:Identifier>
+        <uax:Identifier>ns=1;i=86</uax:Identifier>
       </uax:NodeId>
       <uax:BrowseName>
         <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -655,12 +730,12 @@
       <uax:TypeDefinitionId>
         <uax:Identifier>ns=1;i=40</uax:Identifier>
       </uax:TypeDefinitionId>
-      <uax:NumericId>82</uax:NumericId>
+      <uax:NumericId>86</uax:NumericId>
       <uax:EventNotifier>1</uax:EventNotifier>
       <Firmware1>
         <uax:NodeClass>Object_1</uax:NodeClass>
         <uax:NodeId>
-          <uax:Identifier>ns=1;i=83</uax:Identifier>
+          <uax:Identifier>ns=1;i=87</uax:Identifier>
         </uax:NodeId>
         <uax:BrowseName>
           <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -672,11 +747,11 @@
         <uax:TypeDefinitionId>
           <uax:Identifier>ns=1;i=20</uax:Identifier>
         </uax:TypeDefinitionId>
-        <uax:NumericId>83</uax:NumericId>
+        <uax:NumericId>87</uax:NumericId>
         <FirmwareName>
           <uax:NodeClass>Variable_2</uax:NodeClass>
           <uax:NodeId>
-            <uax:Identifier>ns=1;i=84</uax:Identifier>
+            <uax:Identifier>ns=1;i=88</uax:Identifier>
           </uax:NodeId>
           <uax:BrowseName>
             <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -688,7 +763,7 @@
           <uax:TypeDefinitionId>
             <uax:Identifier>i=2368</uax:Identifier>
           </uax:TypeDefinitionId>
-          <uax:NumericId>84</uax:NumericId>
+          <uax:NumericId>88</uax:NumericId>
           <uax:DataType>
             <uax:Identifier>i=12</uax:Identifier>
           </uax:DataType>
@@ -698,7 +773,7 @@
           <EURange xmlns="http://opcfoundation.org/UA/">
             <uax:NodeClass>Variable_2</uax:NodeClass>
             <uax:NodeId>
-              <uax:Identifier>ns=1;i=88</uax:Identifier>
+              <uax:Identifier>ns=1;i=92</uax:Identifier>
             </uax:NodeId>
             <uax:BrowseName>
               <uax:NamespaceIndex>0</uax:NamespaceIndex>
@@ -710,7 +785,7 @@
             <uax:TypeDefinitionId>
               <uax:Identifier>i=68</uax:Identifier>
             </uax:TypeDefinitionId>
-            <uax:NumericId>88</uax:NumericId>
+            <uax:NumericId>92</uax:NumericId>
             <uax:DataType>
               <uax:Identifier>i=884</uax:Identifier>
             </uax:DataType>
@@ -722,7 +797,7 @@
         <FirmwareVersion>
           <uax:NodeClass>Variable_2</uax:NodeClass>
           <uax:NodeId>
-            <uax:Identifier>ns=1;i=90</uax:Identifier>
+            <uax:Identifier>ns=1;i=94</uax:Identifier>
           </uax:NodeId>
           <uax:BrowseName>
             <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -734,7 +809,7 @@
           <uax:TypeDefinitionId>
             <uax:Identifier>i=2368</uax:Identifier>
           </uax:TypeDefinitionId>
-          <uax:NumericId>90</uax:NumericId>
+          <uax:NumericId>94</uax:NumericId>
           <uax:DataType>
             <uax:Identifier>i=12</uax:Identifier>
           </uax:DataType>
@@ -744,7 +819,7 @@
           <EURange xmlns="http://opcfoundation.org/UA/">
             <uax:NodeClass>Variable_2</uax:NodeClass>
             <uax:NodeId>
-              <uax:Identifier>ns=1;i=94</uax:Identifier>
+              <uax:Identifier>ns=1;i=98</uax:Identifier>
             </uax:NodeId>
             <uax:BrowseName>
               <uax:NamespaceIndex>0</uax:NamespaceIndex>
@@ -756,7 +831,7 @@
             <uax:TypeDefinitionId>
               <uax:Identifier>i=68</uax:Identifier>
             </uax:TypeDefinitionId>
-            <uax:NumericId>94</uax:NumericId>
+            <uax:NumericId>98</uax:NumericId>
             <uax:DataType>
               <uax:Identifier>i=884</uax:Identifier>
             </uax:DataType>
@@ -768,7 +843,7 @@
         <FirmwareBuildTime>
           <uax:NodeClass>Variable_2</uax:NodeClass>
           <uax:NodeId>
-            <uax:Identifier>ns=1;i=96</uax:Identifier>
+            <uax:Identifier>ns=1;i=100</uax:Identifier>
           </uax:NodeId>
           <uax:BrowseName>
             <uax:NamespaceIndex>1</uax:NamespaceIndex>
@@ -780,7 +855,7 @@
           <uax:TypeDefinitionId>
             <uax:Identifier>i=2368</uax:Identifier>
           </uax:TypeDefinitionId>
-          <uax:NumericId>96</uax:NumericId>
+          <uax:NumericId>100</uax:NumericId>
           <uax:DataType>
             <uax:Identifier>i=13</uax:Identifier>
           </uax:DataType>
@@ -790,7 +865,7 @@
           <EURange xmlns="http://opcfoundation.org/UA/">
             <uax:NodeClass>Variable_2</uax:NodeClass>
             <uax:NodeId>
-              <uax:Identifier>ns=1;i=100</uax:Identifier>
+              <uax:Identifier>ns=1;i=104</uax:Identifier>
             </uax:NodeId>
             <uax:BrowseName>
               <uax:NamespaceIndex>0</uax:NamespaceIndex>
@@ -802,7 +877,7 @@
             <uax:TypeDefinitionId>
               <uax:Identifier>i=68</uax:Identifier>
             </uax:TypeDefinitionId>
-            <uax:NumericId>100</uax:NumericId>
+            <uax:NumericId>104</uax:NumericId>
             <uax:DataType>
               <uax:Identifier>i=884</uax:Identifier>
             </uax:DataType>
@@ -813,5 +888,65 @@
         </FirmwareBuildTime>
       </Firmware1>
     </Machine>
+    <StartProcess>
+      <uax:NodeClass>Method_4</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=107</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>StartProcess</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=47</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>ns=1;i=83</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:NumericId>107</uax:NumericId>
+      <uax:Executable>true</uax:Executable>
+      <uax:UserExecutable>true</uax:UserExecutable>
+    </StartProcess>
+    <StopProcess>
+      <uax:NodeClass>Method_4</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=108</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>StopProcess</uax:Name>
+      </uax:BrowseName>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=47</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>ns=1;i=84</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:NumericId>108</uax:NumericId>
+      <uax:Executable>true</uax:Executable>
+      <uax:UserExecutable>true</uax:UserExecutable>
+    </StopProcess>
+    <request>
+      <uax:NodeClass>Method_4</uax:NodeClass>
+      <uax:NodeId>
+        <uax:Identifier>ns=1;i=110</uax:Identifier>
+      </uax:NodeId>
+      <uax:BrowseName>
+        <uax:NamespaceIndex>1</uax:NamespaceIndex>
+        <uax:Name>request</uax:Name>
+      </uax:BrowseName>
+      <uax:Description>
+        <uax:Text>FirmwareTransferRequest</uax:Text>
+      </uax:Description>
+      <uax:ReferenceTypeId>
+        <uax:Identifier>i=47</uax:Identifier>
+      </uax:ReferenceTypeId>
+      <uax:TypeDefinitionId>
+        <uax:Identifier>ns=1;i=109</uax:Identifier>
+      </uax:TypeDefinitionId>
+      <uax:NumericId>110</uax:NumericId>
+      <uax:Executable>true</uax:Executable>
+      <uax:UserExecutable>true</uax:UserExecutable>
+    </request>
   </OPCUAServer1>
 </uax:ListOfNodeState>

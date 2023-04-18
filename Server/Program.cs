@@ -49,7 +49,7 @@ namespace Server {
             catch (Exception e) {
                 string text = "Exception: " + e.Message;
                 if (e.InnerException != null) {
-                    text += "\r\nInner exception: Puzzi";
+                    text += "\r\nInner exception: ";
                     text += e.InnerException.Message;
                     text += "\r" + e.Source;
                 }

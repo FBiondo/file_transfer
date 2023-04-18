@@ -1,10 +1,8 @@
 ﻿using Opc.Ua;
 using Opc.Ua.Configuration;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Application = System.Windows.Forms.Application;
 
 namespace Server {
     internal static class Program {
@@ -15,11 +13,11 @@ namespace Server {
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
-
+            
+            //ApplicationInstance.MessageDlg = new ApplicationMessageDlg();
             ApplicationInstance application = new ApplicationInstance();
             application.ApplicationType = ApplicationType.Server;
-            application.ConfigSectionName = "BiondoServer";
+            application.ConfigSectionName = "Server";
 
             try {
 
@@ -35,25 +33,29 @@ namespace Server {
                 }
 
                 // load the application configuration.
-                application.LoadApplicationConfiguration("..\\..\\Server.Config.xml", false).Wait();
+                application.LoadApplicationConfiguration(false).Wait();
 
-                // check the application certificate.
                 application.CheckApplicationInstanceCertificate(false, 0).Wait();
+
+                // Create server, add additional node managers
+                var server = new Server();
 
                 // start the server.
                 application.Start(new Server()).Wait();
 
-                // run the application interactively.
-                Application.Run(new Form1(application));
+
+                Application.Run(new ServerForm(application));
             }
             catch (Exception e) {
                 string text = "Exception: " + e.Message;
                 if (e.InnerException != null) {
-                    text += "\r\nInner exception: ";
+                    text += "\r\nInner exception: Puzzi";
                     text += e.InnerException.Message;
+                    text += "\r" + e.Source;
                 }
                 MessageBox.Show(text, application.ApplicationName);
             }
         }
+
     }
 }

@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.Configuration;
-using Opc.Ua.Server;
+﻿using Opc.Ua.Server;
 using Opc.Ua;
 using System.Collections.Generic;
 using OPCUAServer;
@@ -54,7 +53,7 @@ namespace Server {
 
                 m_server1.StartProcess.OnCallMethod = new GenericMethodCalledEventHandler(OnStartProcess);
                 m_server1.StopProcess.OnCallMethod = new GenericMethodCalledEventHandler(OnStopProcess);
-                m_server1.request.OnCallMethod = new GenericMethodCalledEventHandler(Request);
+                //m_server1.request.OnCallMethod = new argumen
 
                 m_simulationTimer = new System.Threading.Timer(DoSimulation, null, 1000, 1000);
 
@@ -79,7 +78,8 @@ namespace Server {
 
 
         private ServiceResult Request(ISystemContext context, MethodState method, IList<object> inputArguments, IList<object> outputArguments) {
-            String c = (string) inputArguments[0];
+            Console.WriteLine(inputArguments);
+           // String c = (string) inputArguments[0];
             return ServiceResult.Good;
         }
     }

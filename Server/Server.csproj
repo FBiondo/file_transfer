@@ -36,21 +36,6 @@
     <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Extensions.Logging.Abstractions.7.0.0\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Opc.Ua.Bindings.Https">
-      <HintPath>..\Opc UA 1.5\Opc.Ua.Bindings.Https\Opc.Ua.Bindings.Https.dll</HintPath>
-    </Reference>
-    <Reference Include="Opc.Ua.Configuration">
-      <HintPath>..\Opc UA 1.5\Opc.Ua.Configuration\Opc.Ua.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Opc.Ua.Core">
-      <HintPath>..\Opc UA 1.5\Opc.Ua.Core\Opc.Ua.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Opc.Ua.Security.Certificates">
-      <HintPath>..\Opc UA 1.5\Opc.Ua.Security.Certificates\Opc.Ua.Security.Certificates.dll</HintPath>
-    </Reference>
-    <Reference Include="Opc.Ua.Server">
-      <HintPath>..\Opc UA 1.5\Opc.Ua.Server\Opc.Ua.Server.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -138,6 +123,32 @@
     <Content Include="ServerModel\Compile\OPCUAServer.NodeSet2.xml" />
     <Content Include="ServerModel\Compile\OPCUAServer.PredefinedNodes.xml" />
     <Content Include="ServerModel\ModelDesign.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UA-.NETStandard-1.5.371.3-beta\Libraries\Opc.Ua.Configuration\Opc.Ua.Configuration.csproj">
+      <Project>{1253796b-ff13-4ef7-8821-7ee23d512f56}</Project>
+      <Name>Opc.Ua.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UA-.NETStandard-1.5.371.3-beta\Libraries\Opc.Ua.Gds.Server.Common\Opc.Ua.Gds.Server.Common.csproj">
+      <Project>{88b65deb-167a-48fd-a537-17c9cbfc1d6c}</Project>
+      <Name>Opc.Ua.Gds.Server.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UA-.NETStandard-1.5.371.3-beta\Libraries\Opc.Ua.Security.Certificates\Opc.Ua.Security.Certificates.csproj">
+      <Project>{fcf04555-3a7a-4c3d-a841-1d29e52ddb3a}</Project>
+      <Name>Opc.Ua.Security.Certificates</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UA-.NETStandard-1.5.371.3-beta\Libraries\Opc.Ua.Server\Opc.Ua.Server.csproj">
+      <Project>{2e3fd596-fefd-403d-bd27-442af372d843}</Project>
+      <Name>Opc.Ua.Server</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UA-.NETStandard-1.5.371.3-beta\Stack\Opc.Ua.Bindings.Https\Opc.Ua.Bindings.Https.csproj">
+      <Project>{5d6c2ecc-eb44-4d8a-bebd-d11ae1e081d2}</Project>
+      <Name>Opc.Ua.Bindings.Https</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UA-.NETStandard-1.5.371.3-beta\Stack\Opc.Ua.Core\Opc.Ua.Core.csproj">
+      <Project>{e793b1f9-6af0-4549-903f-594c74577dbf}</Project>
+      <Name>Opc.Ua.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
